@@ -86,6 +86,60 @@ namespace ProgramowanieObiektowe_Labo
         }
 
     }
+
+
+    public class Garaz
+    {
+        private string adres;
+        private int pojemnosc;
+        private int liczbaSamochodow = 0;
+        private Samochod[] samochody;
+
+        public string Adres
+        {
+            get { return adres; }
+            set { adres = value; }
+        }
+        public int Pojemnosc
+        {
+            get { return pojemnosc; }
+            set
+            {
+                pojemnosc = value;
+                samochody = new Samochod[pojemnosc];
+            }
+        }
+
+        public Garaz()
+        {
+            adres = "Nieznany adres";
+            pojemnosc = 0;
+            samochody = null;
+        }
+
+        public Garaz(string adres_, int pojemnosc_)
+        {
+            adres = adres_;
+            pojemnosc = pojemnosc_;
+            samochody = new Samochod[pojemnosc_];
+        }
+
+        public void WprowadzSamochod(Samochod samochod)
+        {
+            if(liczbaSamochodow >= samochody.Length)
+            {
+                Console.WriteLine("W Twoim garażu znajduje się już zbyt wiele pojazdów! Nie masz miejsca na kolejny!");
+            } else
+            {
+                samochody[liczbaSamochodow] = samochod;
+                Console.WriteLine("Samochód " + samochod.Marka + " " + samochod.Model + " został pomyślnie dodany do Twojego garażu na miejscu nr: " + liczbaSamochodow + ";");
+                liczbaSamochodow++;
+            }
+        }
+
+
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -98,6 +152,14 @@ namespace ProgramowanieObiektowe_Labo
             Console.WriteLine("Koszt przejazdu samochodem Volkswagen na trasie 500 KM przy cenie benzyny 6.25 PLN/litr: " + vw.ObliczKosztPrzejazdu(500.0, 6.25) + " złotych.");
 
             vw.WypiszInfo();
+
+            Garaz mojGaraz = new Garaz("ul. Lawendowe Wzgórze 15, Gdańsk", 1);
+
+            mojGaraz.WprowadzSamochod(opel);
+
+            mojGaraz.WprowadzSamochod(vw);
+
+
 
         }
     }

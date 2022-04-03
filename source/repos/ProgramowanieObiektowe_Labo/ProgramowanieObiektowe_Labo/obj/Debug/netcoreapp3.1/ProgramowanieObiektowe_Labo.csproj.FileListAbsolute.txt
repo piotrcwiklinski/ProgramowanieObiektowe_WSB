@@ -12,3 +12,17 @@ C:\Users\cwikl\source\repos\ProgramowanieObiektowe_Labo\ProgramowanieObiektowe_L
 C:\Users\cwikl\source\repos\ProgramowanieObiektowe_Labo\ProgramowanieObiektowe_Labo\obj\Debug\netcoreapp3.1\ProgramowanieObiektowe_Labo.dll
 C:\Users\cwikl\source\repos\ProgramowanieObiektowe_Labo\ProgramowanieObiektowe_Labo\obj\Debug\netcoreapp3.1\ProgramowanieObiektowe_Labo.pdb
 C:\Users\cwikl\source\repos\ProgramowanieObiektowe_Labo\ProgramowanieObiektowe_Labo\obj\Debug\netcoreapp3.1\ProgramowanieObiektowe_Labo.genruntimeconfig.cache
+C:\Users\cwikl\source\repos\ProgramowanieObiektowe_WSB\source\repos\ProgramowanieObiektowe_Labo\ProgramowanieObiektowe_Labo\bin\Debug\netcoreapp3.1\ProgramowanieObiektowe_Labo.exe
+C:\Users\cwikl\source\repos\ProgramowanieObiektowe_WSB\source\repos\ProgramowanieObiektowe_Labo\ProgramowanieObiektowe_Labo\bin\Debug\netcoreapp3.1\ProgramowanieObiektowe_Labo.deps.json
+C:\Users\cwikl\source\repos\ProgramowanieObiektowe_WSB\source\repos\ProgramowanieObiektowe_Labo\ProgramowanieObiektowe_Labo\bin\Debug\netcoreapp3.1\ProgramowanieObiektowe_Labo.runtimeconfig.json
+C:\Users\cwikl\source\repos\ProgramowanieObiektowe_WSB\source\repos\ProgramowanieObiektowe_Labo\ProgramowanieObiektowe_Labo\bin\Debug\netcoreapp3.1\ProgramowanieObiektowe_Labo.runtimeconfig.dev.json
+C:\Users\cwikl\source\repos\ProgramowanieObiektowe_WSB\source\repos\ProgramowanieObiektowe_Labo\ProgramowanieObiektowe_Labo\bin\Debug\netcoreapp3.1\ProgramowanieObiektowe_Labo.dll
+C:\Users\cwikl\source\repos\ProgramowanieObiektowe_WSB\source\repos\ProgramowanieObiektowe_Labo\ProgramowanieObiektowe_Labo\bin\Debug\netcoreapp3.1\ProgramowanieObiektowe_Labo.pdb
+C:\Users\cwikl\source\repos\ProgramowanieObiektowe_WSB\source\repos\ProgramowanieObiektowe_Labo\ProgramowanieObiektowe_Labo\obj\Debug\netcoreapp3.1\ProgramowanieObiektowe_Labo.csproj.AssemblyReference.cache
+C:\Users\cwikl\source\repos\ProgramowanieObiektowe_WSB\source\repos\ProgramowanieObiektowe_Labo\ProgramowanieObiektowe_Labo\obj\Debug\netcoreapp3.1\ProgramowanieObiektowe_Labo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cwikl\source\repos\ProgramowanieObiektowe_WSB\source\repos\ProgramowanieObiektowe_Labo\ProgramowanieObiektowe_Labo\obj\Debug\netcoreapp3.1\ProgramowanieObiektowe_Labo.AssemblyInfoInputs.cache
+C:\Users\cwikl\source\repos\ProgramowanieObiektowe_WSB\source\repos\ProgramowanieObiektowe_Labo\ProgramowanieObiektowe_Labo\obj\Debug\netcoreapp3.1\ProgramowanieObiektowe_Labo.AssemblyInfo.cs
+C:\Users\cwikl\source\repos\ProgramowanieObiektowe_WSB\source\repos\ProgramowanieObiektowe_Labo\ProgramowanieObiektowe_Labo\obj\Debug\netcoreapp3.1\ProgramowanieObiektowe_Labo.csproj.CoreCompileInputs.cache
+C:\Users\cwikl\source\repos\ProgramowanieObiektowe_WSB\source\repos\ProgramowanieObiektowe_Labo\ProgramowanieObiektowe_Labo\obj\Debug\netcoreapp3.1\ProgramowanieObiektowe_Labo.dll
+C:\Users\cwikl\source\repos\ProgramowanieObiektowe_WSB\source\repos\ProgramowanieObiektowe_Labo\ProgramowanieObiektowe_Labo\obj\Debug\netcoreapp3.1\ProgramowanieObiektowe_Labo.pdb
+C:\Users\cwikl\source\repos\ProgramowanieObiektowe_WSB\source\repos\ProgramowanieObiektowe_Labo\ProgramowanieObiektowe_Labo\obj\Debug\netcoreapp3.1\ProgramowanieObiektowe_Labo.genruntimeconfig.cache

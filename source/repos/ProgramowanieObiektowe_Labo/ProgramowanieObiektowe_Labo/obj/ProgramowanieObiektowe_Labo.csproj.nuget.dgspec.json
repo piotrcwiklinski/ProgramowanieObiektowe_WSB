@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cwikl\\source\\repos\\ProgramowanieObiektowe_Labo\\ProgramowanieObiektowe_Labo\\ProgramowanieObiektowe_Labo.csproj": {}
+    "C:\\Users\\cwikl\\source\\repos\\ProgramowanieObiektowe_WSB\\source\\repos\\ProgramowanieObiektowe_Labo\\ProgramowanieObiektowe_Labo\\ProgramowanieObiektowe_Labo.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cwikl\\source\\repos\\ProgramowanieObiektowe_Labo\\ProgramowanieObiektowe_Labo\\ProgramowanieObiektowe_Labo.csproj": {
+    "C:\\Users\\cwikl\\source\\repos\\ProgramowanieObiektowe_WSB\\source\\repos\\ProgramowanieObiektowe_Labo\\ProgramowanieObiektowe_Labo\\ProgramowanieObiektowe_Labo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cwikl\\source\\repos\\ProgramowanieObiektowe_Labo\\ProgramowanieObiektowe_Labo\\ProgramowanieObiektowe_Labo.csproj",
+        "projectUniqueName": "C:\\Users\\cwikl\\source\\repos\\ProgramowanieObiektowe_WSB\\source\\repos\\ProgramowanieObiektowe_Labo\\ProgramowanieObiektowe_Labo\\ProgramowanieObiektowe_Labo.csproj",
         "projectName": "ProgramowanieObiektowe_Labo",
-        "projectPath": "C:\\Users\\cwikl\\source\\repos\\ProgramowanieObiektowe_Labo\\ProgramowanieObiektowe_Labo\\ProgramowanieObiektowe_Labo.csproj",
+        "projectPath": "C:\\Users\\cwikl\\source\\repos\\ProgramowanieObiektowe_WSB\\source\\repos\\ProgramowanieObiektowe_Labo\\ProgramowanieObiektowe_Labo\\ProgramowanieObiektowe_Labo.csproj",
         "packagesPath": "C:\\Users\\cwikl\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cwikl\\source\\repos\\ProgramowanieObiektowe_Labo\\ProgramowanieObiektowe_Labo\\obj\\",
+        "outputPath": "C:\\Users\\cwikl\\source\\repos\\ProgramowanieObiektowe_WSB\\source\\repos\\ProgramowanieObiektowe_Labo\\ProgramowanieObiektowe_Labo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
