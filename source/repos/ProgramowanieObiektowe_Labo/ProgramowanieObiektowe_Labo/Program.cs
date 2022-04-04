@@ -85,6 +85,12 @@ namespace ProgramowanieObiektowe_Labo
             WypiszIloscSamochodow();
         }
 
+        public override string ToString()
+        {
+            string newString = marka + " " + model + ";";
+            return newString;
+        }
+
     }
 
 
@@ -137,7 +143,41 @@ namespace ProgramowanieObiektowe_Labo
             }
         }
 
+        public Samochod WyprowadzSamochod()
+        {
+            if(liczbaSamochodow == 0)
+            {
+                Console.WriteLine("Twója garaż jest pusty i nie można wyprowadzić z niego żadnego samochodu.");
+                return null;
+            } else
+            {
+                Samochod temp = samochody[liczbaSamochodow - 1];
+                samochody[liczbaSamochodow - 1] = null;
+                liczbaSamochodow--;
+                Console.WriteLine("Samochód, który opuścił Twój garaż to: " + temp);
+                return
+                temp;
+            }
+        }
 
+        public void WypiszInfo()
+        {
+            Console.WriteLine("/// ZAWARTOŚĆ TWOJEGO GARAŻU ///");
+            if (liczbaSamochodow > 0) { 
+            for (int i = 0; i < samochody.Length; i++)
+            {
+                if (samochody[i] != null)
+                {
+                    Console.Write("[MIEJSCE " + i + "]");
+                    samochody[i].WypiszInfo();
+                }
+            }
+        } else
+            {
+                Console.WriteLine("Niestety, Twój garaż jest obecnie pusty...");
+            }
+
+        }
     }
 
     class Program
@@ -149,17 +189,31 @@ namespace ProgramowanieObiektowe_Labo
 
             Samochod vw = new Samochod("Volkswagen", "Passat", 5, 2.4, 10.0);
 
+            Samochod ford = new Samochod("Ford", "Fiesta", 3, 1.0, 5.5);
+
             Console.WriteLine("Koszt przejazdu samochodem Volkswagen na trasie 500 KM przy cenie benzyny 6.25 PLN/litr: " + vw.ObliczKosztPrzejazdu(500.0, 6.25) + " złotych.");
 
             vw.WypiszInfo();
 
-            Garaz mojGaraz = new Garaz("ul. Lawendowe Wzgórze 15, Gdańsk", 1);
+            Garaz mojGaraz = new Garaz("ul. Lawendowe Wzgórze 15, Gdańsk", 3);
+
+            Console.WriteLine("");
+
+            mojGaraz.WypiszInfo();
+
+            mojGaraz.WyprowadzSamochod();
 
             mojGaraz.WprowadzSamochod(opel);
 
             mojGaraz.WprowadzSamochod(vw);
 
+            mojGaraz.WyprowadzSamochod();
 
+            //mojGaraz.WyprowadzSamochod();
+
+            mojGaraz.WprowadzSamochod(ford);
+
+            mojGaraz.WypiszInfo();
 
         }
     }
