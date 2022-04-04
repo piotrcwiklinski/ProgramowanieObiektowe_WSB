@@ -10,6 +10,7 @@ namespace ProgramowanieObiektowe_Labo
         private int ileDrzwi;
         private double pojemnoscSilnika;
         private double srednieSpalanie;
+        private string numerRejestracyjny;
         public string Marka
         {
             get { return marka; }
@@ -34,6 +35,12 @@ namespace ProgramowanieObiektowe_Labo
         {
             get { return srednieSpalanie; }
             set { srednieSpalanie = value; }
+        }
+
+        public string NumerRejestracyjny
+        {
+            get { return numerRejestracyjny; }
+            set { numerRejestracyjny = value; }
         }
 
         private static int ileAut = 0;
@@ -180,6 +187,71 @@ namespace ProgramowanieObiektowe_Labo
         }
     }
 
+    class Osoba
+    {
+        private string imie;
+        private string nazwisko;
+        private string adres;
+        private int iloscSamochodow = 0;
+        private string[] numeryRej;
+
+        public Osoba()
+        {
+            imie = "Nieznane Imię";
+            nazwisko = "Nieznane Nazwisko";
+            adres = "Nieznany Adres";
+            numeryRej = new string[3];
+        }
+
+        public Osoba(string imie_, string nazwisko_, string adres_)
+        {
+            imie = imie_;
+            nazwisko = nazwisko_;
+            adres = adres_;
+            numeryRej = new string[3];
+        }
+
+        public void DodajSamochod(Samochod samochod)
+        {
+            if (iloscSamochodow < 3)
+            {
+                string tempRej = samochod.NumerRejestracyjny;
+                numeryRej[iloscSamochodow] = tempRej;
+                iloscSamochodow++;
+                Console.WriteLine("Dodawanie samochodu o numerze rej. " + tempRej + " zakończone powodzeniem!");
+            } else
+            {
+                Console.WriteLine("Niestety nie możesz posiadać większej ilości pojazdów! Max. to 3 sztuki.");
+            }
+        }
+
+        public void UsunSamochod(string NumerRej_)
+        {
+            for(int i = 0; i < numeryRej.Length; i++)
+            {
+                if(numeryRej[i] == NumerRej_)
+                {
+                    numeryRej[i] = null;
+                    Console.WriteLine("Usunięto samochód o numerze rej. " + NumerRej_ + " z kolekcji.");
+                    iloscSamochodow--;
+                }
+            }
+        }
+
+        public void WypiszInfo()
+        {
+            string tempRejList = null;
+            for(int i = 0; i < numeryRej.Length; i++)
+            {
+                if(numeryRej[i] != null)
+                {
+                    tempRejList = numeryRej[i] + "; " + tempRejList;
+                }
+            }
+            Console.WriteLine("Imię i Nazwisko: " + imie + " " + nazwisko + " Adres: " + adres + " Numery rejestracyjne pojazdów: " + tempRejList);
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
@@ -190,6 +262,10 @@ namespace ProgramowanieObiektowe_Labo
             Samochod vw = new Samochod("Volkswagen", "Passat", 5, 2.4, 10.0);
 
             Samochod ford = new Samochod("Ford", "Fiesta", 3, 1.0, 5.5);
+
+            vw.NumerRejestracyjny = "WI059KM";
+            opel.NumerRejestracyjny = "GD123JP";
+            ford.NumerRejestracyjny = "XYZ987ZYX";
 
             Console.WriteLine("Koszt przejazdu samochodem Volkswagen na trasie 500 KM przy cenie benzyny 6.25 PLN/litr: " + vw.ObliczKosztPrzejazdu(500.0, 6.25) + " złotych.");
 
@@ -207,13 +283,24 @@ namespace ProgramowanieObiektowe_Labo
 
             mojGaraz.WprowadzSamochod(vw);
 
-            mojGaraz.WyprowadzSamochod();
-
-            //mojGaraz.WyprowadzSamochod();
-
             mojGaraz.WprowadzSamochod(ford);
 
             mojGaraz.WypiszInfo();
+
+            mojGaraz.WyprowadzSamochod();
+
+            Osoba ja = new Osoba("Piotr", "Ćwikliński", "ul. Lawendowe Wzgórze 15");
+
+            ja.DodajSamochod(vw);
+            ja.DodajSamochod(opel);
+            ja.DodajSamochod(vw);
+            ja.DodajSamochod(ford);
+
+            ja.WypiszInfo();
+
+            ja.UsunSamochod("WI059KM");
+
+            ja.WypiszInfo();
 
         }
     }
